@@ -4,15 +4,15 @@ services:
     build:
       context: ../../udagram-reverseproxy
     image: hngiap94/reverseproxy
-  # backend_user:
-  #   build:
-  #     context: ../../udagram-api-user
-  #   image: hngiap94/udagram-api-user
-  # backend_feed:
-  #   build:
-  #     context: ../../udagram-api-feed
-  #   image: hngiap94/udagram-api-feed
-  # frontend:
-  #   build:
-  #     context: ../../udagram-frontend
-  #   image: hngiap94/udagram-frontend
+  backend_user:
+    build:
+      context: ../../udagram-api-user
+    image: hngiap94/udagram-api-user
+  backend_feed:
+    build:
+      context: ../../udagram-api-feed
+    image: hngiap94/udagram-api-feed
+  frontend:
+    build:
+      context: ../../udagram-frontend
+    image: hngiap94/udagram-frontend

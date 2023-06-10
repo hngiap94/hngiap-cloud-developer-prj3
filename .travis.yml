@@ -4,4 +4,8 @@ services: docker
 
 install:
   - docker-compose -f deployment/docker/docker-compose-build.yaml build --parallel
-  - sh deployment/docker/publish.sh
+deploy:
+  - provider: script
+    script: bash deployment/docker/publish.sh
+    on:
+      branch: master
